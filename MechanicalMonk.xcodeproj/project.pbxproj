@@ -17,16 +17,6 @@
 		FAC2E6162BE772350014826E /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6152BE772350014826E /* IntervalView.swift */; };
 		FAC2E6182BE773C10014826E /* StartSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6172BE773C10014826E /* StartSessionView.swift */; };
 		FAC2E61A2BE779530014826E /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6192BE779530014826E /* SessionView.swift */; };
-		FAD12DF12BE789E700B16E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DF02BE789E700B16E9B /* ContentView.swift */; };
-		FAD12DF32BE789E900B16E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD12DF22BE789E900B16E9B /* Assets.xcassets */; };
-		FAD12DF62BE789E900B16E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD12DF52BE789E900B16E9B /* Preview Assets.xcassets */; };
-		FAD12DFB2BE78A4400B16E9B /* MechanicalMonkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DFA2BE78A4400B16E9B /* MechanicalMonkApp.swift */; };
-		FAD12E022BE78A5000B16E9B /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DFC2BE78A4F00B16E9B /* SessionView.swift */; };
-		FAD12E032BE78A5000B16E9B /* StartSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DFD2BE78A4F00B16E9B /* StartSessionView.swift */; };
-		FAD12E042BE78A5000B16E9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DFE2BE78A4F00B16E9B /* Model.swift */; };
-		FAD12E052BE78A5000B16E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12DFF2BE78A4F00B16E9B /* ContentView.swift */; };
-		FAD12E062BE78A5000B16E9B /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12E002BE78A5000B16E9B /* IntervalView.swift */; };
-		FAD12E072BE78A5000B16E9B /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD12E012BE78A5000B16E9B /* DurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,28 +55,10 @@
 		FAC2E6152BE772350014826E /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
 		FAC2E6172BE773C10014826E /* StartSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionView.swift; sourceTree = "<group>"; };
 		FAC2E6192BE779530014826E /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
-		FAD12DEC2BE789E700B16E9B /* MechanicalMonkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MechanicalMonkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD12DF02BE789E700B16E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAD12DF22BE789E900B16E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAD12DF52BE789E900B16E9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAD12DFA2BE78A4400B16E9B /* MechanicalMonkApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MechanicalMonkApp.swift; sourceTree = "<group>"; };
-		FAD12DFC2BE78A4F00B16E9B /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
-		FAD12DFD2BE78A4F00B16E9B /* StartSessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartSessionView.swift; sourceTree = "<group>"; };
-		FAD12DFE2BE78A4F00B16E9B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		FAD12DFF2BE78A4F00B16E9B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAD12E002BE78A5000B16E9B /* IntervalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
-		FAD12E012BE78A5000B16E9B /* DurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAC2E5F72BE76AD00014826E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD12DE92BE789E700B16E9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC2E5FE2BE76AD00014826E /* MechanicalMonk Watch App */,
-				FAD12DED2BE789E700B16E9B /* MechanicalMonkApp */,
 				FAC2E5F52BE76AD00014826E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,7 +81,6 @@
 			children = (
 				FAC2E5F42BE76AD00014826E /* MechanicalMonk.app */,
 				FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */,
-				FAD12DEC2BE789E700B16E9B /* MechanicalMonkApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,31 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC2E6062BE76AD30014826E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAD12DED2BE789E700B16E9B /* MechanicalMonkApp */ = {
-			isa = PBXGroup;
-			children = (
-				FAD12DFA2BE78A4400B16E9B /* MechanicalMonkApp.swift */,
-				FAD12DF02BE789E700B16E9B /* ContentView.swift */,
-				FAD12DFF2BE78A4F00B16E9B /* ContentView.swift */,
-				FAD12E012BE78A5000B16E9B /* DurationView.swift */,
-				FAD12E002BE78A5000B16E9B /* IntervalView.swift */,
-				FAD12DFE2BE78A4F00B16E9B /* Model.swift */,
-				FAD12DFC2BE78A4F00B16E9B /* SessionView.swift */,
-				FAD12DFD2BE78A4F00B16E9B /* StartSessionView.swift */,
-				FAD12DF22BE789E900B16E9B /* Assets.xcassets */,
-				FAD12DF42BE789E900B16E9B /* Preview Content */,
-			);
-			path = MechanicalMonkApp;
-			sourceTree = "<group>";
-		};
-		FAD12DF42BE789E900B16E9B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FAD12DF52BE789E900B16E9B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -201,23 +146,6 @@
 			productReference = FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAD12DEB2BE789E700B16E9B /* MechanicalMonkApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD12DF72BE789E900B16E9B /* Build configuration list for PBXNativeTarget "MechanicalMonkApp" */;
-			buildPhases = (
-				FAD12DE82BE789E700B16E9B /* Sources */,
-				FAD12DE92BE789E700B16E9B /* Frameworks */,
-				FAD12DEA2BE789E700B16E9B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MechanicalMonkApp;
-			productName = MechanicalMonkApp;
-			productReference = FAD12DEC2BE789E700B16E9B /* MechanicalMonkApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,9 +160,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					FAC2E5F92BE76AD00014826E = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					FAD12DEB2BE789E700B16E9B = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -254,7 +179,6 @@
 			targets = (
 				FAC2E5F32BE76AD00014826E /* MechanicalMonk */,
 				FAC2E5F92BE76AD00014826E /* MechanicalMonk Watch App */,
-				FAD12DEB2BE789E700B16E9B /* MechanicalMonkApp */,
 			);
 		};
 /* End PBXProject section */
@@ -276,15 +200,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD12DEA2BE789E700B16E9B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD12DF62BE789E900B16E9B /* Preview Assets.xcassets in Resources */,
-				FAD12DF32BE789E900B16E9B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -299,21 +214,6 @@
 				FAC2E6122BE76FA60014826E /* DurationView.swift in Sources */,
 				FAC2E6002BE76AD00014826E /* MechanicalMonkApp.swift in Sources */,
 				FAC2E6142BE7702C0014826E /* Model.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD12DE82BE789E700B16E9B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD12DF12BE789E700B16E9B /* ContentView.swift in Sources */,
-				FAD12DFB2BE78A4400B16E9B /* MechanicalMonkApp.swift in Sources */,
-				FAD12E052BE78A5000B16E9B /* ContentView.swift in Sources */,
-				FAD12E042BE78A5000B16E9B /* Model.swift in Sources */,
-				FAD12E062BE78A5000B16E9B /* IntervalView.swift in Sources */,
-				FAD12E032BE78A5000B16E9B /* StartSessionView.swift in Sources */,
-				FAD12E072BE78A5000B16E9B /* DurationView.swift in Sources */,
-				FAD12E022BE78A5000B16E9B /* SessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonk.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -488,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonk.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -533,69 +433,6 @@
 			};
 			name = Release;
 		};
-		FAD12DF82BE789E900B16E9B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MechanicalMonkApp/Preview Content\"";
-				DEVELOPMENT_TEAM = M59X77GZ2V;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FAD12DF92BE789E900B16E9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MechanicalMonkApp/Preview Content\"";
-				DEVELOPMENT_TEAM = M59X77GZ2V;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,15 +459,6 @@
 			buildConfigurations = (
 				FAC2E60F2BE76AD30014826E /* Debug */,
 				FAC2E6102BE76AD30014826E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD12DF72BE789E900B16E9B /* Build configuration list for PBXNativeTarget "MechanicalMonkApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD12DF82BE789E900B16E9B /* Debug */,
-				FAD12DF92BE789E900B16E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

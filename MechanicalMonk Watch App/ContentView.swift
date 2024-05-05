@@ -8,19 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model: MechanicalMonkModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if model.timer == nil {
+            TabView {
+                DurationView().tabItem{
+                    Text("Duration")
+                }
+                IntervalView().tabItem {
+                    Text("Interval")
+                }
+                StartSessionView().tabItem{
+                    Text("Session")
+                }
+            }
         }
-        .padding()
+        else {
+            SessionView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MechanicalMonkModel())
     }
 }

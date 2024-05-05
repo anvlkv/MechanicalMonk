@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MechanicalMonk_Watch_AppApp: App {
+    @StateObject var model: MechanicalMonkModel = MechanicalMonkModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(model)
         }
     }
 }

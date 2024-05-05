@@ -12,6 +12,11 @@
 		FAC2E6022BE76AD00014826E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6012BE76AD00014826E /* ContentView.swift */; };
 		FAC2E6042BE76AD30014826E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC2E6032BE76AD30014826E /* Assets.xcassets */; };
 		FAC2E6072BE76AD30014826E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC2E6062BE76AD30014826E /* Preview Assets.xcassets */; };
+		FAC2E6122BE76FA60014826E /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6112BE76FA60014826E /* DurationView.swift */; };
+		FAC2E6142BE7702C0014826E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6132BE7702C0014826E /* Model.swift */; };
+		FAC2E6162BE772350014826E /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6152BE772350014826E /* IntervalView.swift */; };
+		FAC2E6182BE773C10014826E /* StartSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6172BE773C10014826E /* StartSessionView.swift */; };
+		FAC2E61A2BE779530014826E /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6192BE779530014826E /* SessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		FAC2E6012BE76AD00014826E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAC2E6032BE76AD30014826E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC2E6062BE76AD30014826E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC2E6112BE76FA60014826E /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
+		FAC2E6132BE7702C0014826E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FAC2E6152BE772350014826E /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
+		FAC2E6172BE773C10014826E /* StartSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionView.swift; sourceTree = "<group>"; };
+		FAC2E6192BE779530014826E /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,11 @@
 			children = (
 				FAC2E5FF2BE76AD00014826E /* MechanicalMonkApp.swift */,
 				FAC2E6012BE76AD00014826E /* ContentView.swift */,
+				FAC2E6152BE772350014826E /* IntervalView.swift */,
+				FAC2E6172BE773C10014826E /* StartSessionView.swift */,
+				FAC2E6192BE779530014826E /* SessionView.swift */,
+				FAC2E6132BE7702C0014826E /* Model.swift */,
+				FAC2E6112BE76FA60014826E /* DurationView.swift */,
 				FAC2E6032BE76AD30014826E /* Assets.xcassets */,
 				FAC2E6052BE76AD30014826E /* Preview Content */,
 			);
@@ -192,8 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC2E61A2BE779530014826E /* SessionView.swift in Sources */,
 				FAC2E6022BE76AD00014826E /* ContentView.swift in Sources */,
+				FAC2E6182BE773C10014826E /* StartSessionView.swift in Sources */,
+				FAC2E6162BE772350014826E /* IntervalView.swift in Sources */,
+				FAC2E6122BE76FA60014826E /* DurationView.swift in Sources */,
 				FAC2E6002BE76AD00014826E /* MechanicalMonkApp.swift in Sources */,
+				FAC2E6142BE7702C0014826E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

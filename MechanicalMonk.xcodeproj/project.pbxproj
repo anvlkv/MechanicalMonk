@@ -280,6 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -334,6 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -357,6 +359,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -391,6 +394,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -420,6 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MARKETING_VERSION = 1.0;
@@ -438,6 +443,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MARKETING_VERSION = 1.0;

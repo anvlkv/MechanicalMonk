@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAC2E5F92BE76AD00014826E"
-               BuildableName = "MechanicalMonk Watch App.app"
+               BuildableName = "Mechanical monk.app"
                BlueprintName = "MechanicalMonk Watch App"
                ReferencedContainer = "container:MechanicalMonk.xcodeproj">
             </BuildableReference>
@@ -59,7 +59,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAC2E5F92BE76AD00014826E"
-            BuildableName = "MechanicalMonk Watch App.app"
+            BuildableName = "Mechanical monk.app"
             BlueprintName = "MechanicalMonk Watch App"
             ReferencedContainer = "container:MechanicalMonk.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAC2E5F92BE76AD00014826E"
-            BuildableName = "MechanicalMonk Watch App.app"
+            BuildableName = "Mechanical monk.app"
             BlueprintName = "MechanicalMonk Watch App"
             ReferencedContainer = "container:MechanicalMonk.xcodeproj">
          </BuildableReference>

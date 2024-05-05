@@ -28,8 +28,7 @@ struct SessionView: View {
     }
     
     func stopSession() {
-        model.timer?.invalidate()
-        model.timer = nil
+        model.endWorkout()
     }
 }
 

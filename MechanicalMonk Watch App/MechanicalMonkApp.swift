@@ -13,7 +13,11 @@ struct MechanicalMonk_Watch_AppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(model)
+            ContentView()
+                .environmentObject(model)
+                .onAppear {
+                    model.requestAuthorization()
+                }
         }
     }
 }

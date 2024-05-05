@@ -20,11 +20,14 @@ struct DurationView: View {
                         Text("\(val)").tag(val)
                     })
                 })
+                .tint(Color("AccentColor"))
+                
                 Picker("Minutes", selection: $model.minutes, content: {
                     ForEach(1..<60, content: {val in
                         Text("\(val)").tag(val)
                     })
                 })
+                .tint(Color("AccentColor"))
             }
         }
     }

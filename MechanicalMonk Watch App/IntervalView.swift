@@ -20,11 +20,14 @@ struct IntervalView: View {
                         Text("\(val)").tag(val)
                     })
                 })
+                .tint(Color("AccentColor"))
+                
                 Picker("Seconds", selection: $model.intervalSeconds, content: {
                     ForEach(0..<60, content: {val in
                         Text("\(val)").tag(val)
                     })
                 })
+                .tint(Color("AccentColor"))
             }
         }
     }

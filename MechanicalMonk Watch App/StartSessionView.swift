@@ -13,7 +13,10 @@ struct StartSessionView: View {
     var body: some View {
         
         VStack {
-            Text("Meditate for \(model.hours):\(model.minutes)")
+            let hh = String(format: "%02d", model.hours)
+            let mm = String(format: "%02d", model.minutes)
+            
+            Text("Meditate for \(hh):\(mm)")
             Spacer()
             Text("Feedback every \(model.intervalMinutes)m \(model.intervalSeconds)s").font(.footnote)
             Spacer()
@@ -24,7 +27,7 @@ struct StartSessionView: View {
     }
     
     func startSession() {
-        model.scheduleTimer()
+        model.startWorkout()
     }
 }
 

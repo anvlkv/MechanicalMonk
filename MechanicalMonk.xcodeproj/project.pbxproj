@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAC2E5FB2BE76AD00014826E /* MechanicalMonk Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAC2E5FB2BE76AD00014826E /* Mechanical monk.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAC2E5FA2BE76AD00014826E /* Mechanical monk.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FAC2E6002BE76AD00014826E /* MechanicalMonkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E5FF2BE76AD00014826E /* MechanicalMonkApp.swift */; };
 		FAC2E6022BE76AD00014826E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2E6012BE76AD00014826E /* ContentView.swift */; };
 		FAC2E6042BE76AD30014826E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC2E6032BE76AD30014826E /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				FAC2E5FB2BE76AD00014826E /* MechanicalMonk Watch App.app in Embed Watch Content */,
+				FAC2E5FB2BE76AD00014826E /* Mechanical monk.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,8 +44,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FAAADA5F2BE813EF00210545 /* MechanicalMonk Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MechanicalMonk Watch App.entitlements"; sourceTree = "<group>"; };
 		FAC2E5F42BE76AD00014826E /* MechanicalMonk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MechanicalMonk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MechanicalMonk Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC2E5FA2BE76AD00014826E /* Mechanical monk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mechanical monk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC2E5FF2BE76AD00014826E /* MechanicalMonkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalMonkApp.swift; sourceTree = "<group>"; };
 		FAC2E6012BE76AD00014826E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAC2E6032BE76AD30014826E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC2E5F42BE76AD00014826E /* MechanicalMonk.app */,
-				FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */,
+				FAC2E5FA2BE76AD00014826E /* Mechanical monk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +89,7 @@
 		FAC2E5FE2BE76AD00014826E /* MechanicalMonk Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				FAAADA5F2BE813EF00210545 /* MechanicalMonk Watch App.entitlements */,
 				FAC2E5FF2BE76AD00014826E /* MechanicalMonkApp.swift */,
 				FAC2E6012BE76AD00014826E /* ContentView.swift */,
 				FAC2E6152BE772350014826E /* IntervalView.swift */,
@@ -143,7 +145,7 @@
 			);
 			name = "MechanicalMonk Watch App";
 			productName = "MechanicalMonk Watch App";
-			productReference = FAC2E5FA2BE76AD00014826E /* MechanicalMonk Watch App.app */;
+			productReference = FAC2E5FA2BE76AD00014826E /* Mechanical monk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -278,6 +280,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,6 +334,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -343,13 +349,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MechanicalMonk Watch App/MechanicalMonk Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MechanicalMonk Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,7 +367,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp.watchkitApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mechanical monk";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -374,13 +383,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MechanicalMonk Watch App/MechanicalMonk Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MechanicalMonk Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +401,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp.watchkitApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mechanical monk";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -408,6 +420,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,6 +438,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M59X77GZ2V;
 				INFOPLIST_KEY_CFBundleDisplayName = MechanicalMonk;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Mechanical Monk wants to view stats about your meditation practice.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Mechanical Monk wants to store stats about your meditation practice.";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anvlkv.MechanicalMonkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

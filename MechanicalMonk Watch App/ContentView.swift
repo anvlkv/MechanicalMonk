@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
     @EnvironmentObject var model: MechanicalMonkModel

@@ -9,7 +9,27 @@ import Foundation
 import SwiftUI
 import HealthKit
 
-class MechanicalMonkModel: NSObject, ObservableObject {
+class MechanicalMonkModel: NSObject, ObservableObject, WKExtendedRuntimeSessionDelegate {
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
+        switch reason {
+        case .expired:
+            if self.hours > 0 || self.minutes > 0 || self.seconds > 0 {
+                self.startWorkout()
+            }
+        default:
+            break
+        }
+    }
+    
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        self.scheduleTimer()
+    }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+    
     @Published var hours: Int = 0
     @Published var minutes: Int = 15
     @Published var seconds: Int = 0
@@ -23,62 +43,15 @@ class MechanicalMonkModel: NSObject, ObservableObject {
     
     
     let device = WKInterfaceDevice.current()
-    let healthStore = HKHealthStore()
-    var session: HKWorkoutSession?
-    var builder: HKLiveWorkoutBuilder?
+    var session = WKExtendedRuntimeSession()
     
 
     // Start the workout.
     func startWorkout() {
-        let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .mindAndBody
-        configuration.locationType = .indoor
-
-        // Create the session and obtain the workout builder.
-        do {
-            session = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
-            builder = session?.associatedWorkoutBuilder()
-        } catch {
-            // Handle any exceptions.
-            return
-        }
-
-        // Setup session and builder.
-        session?.delegate = self
-        builder?.delegate = self
-
-        // Set the workout builder's data source.
-        builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore,
-                                                     workoutConfiguration: configuration)
-
-        // Start the workout session and begin data collection.
-        let startDate = Date()
-        session?.startActivity(with: startDate)
-        builder?.beginCollection(withStart: startDate) { (success, error) in
-            // The workout has started.
-            if success {
-                self.scheduleTimer()
-            }
-        }
+        session.delegate = self
+        session.start()
     }
     
-    // Request authorization to access HealthKit.
-    func requestAuthorization() {
-        // The quantity type to write to the health store.
-        let typesToShare: Set = [
-            HKQuantityType.workoutType()
-        ]
-
-        // The quantity types to read from the health store.
-        let typesToRead: Set = [
-            HKObjectType.activitySummaryType()
-        ]
-
-        // Request authorization for those quantity types.
-        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
-            // Handle error.
-        }
-    }
 
     // MARK: - Session State Control
 
@@ -94,17 +67,18 @@ class MechanicalMonkModel: NSObject, ObservableObject {
     }
 
     func pause() {
-        session?.pause()
+        session.invalidate()
         timer!.invalidate()
     }
 
     func resume() {
-        session?.resume()
+        session = WKExtendedRuntimeSession()
+        session.start()
         scheduleTimer()
     }
 
     func endWorkout() {
-        session?.end()
+        session.invalidate()
         timer!.invalidate()
         timer = nil
     }
@@ -143,7 +117,7 @@ class MechanicalMonkModel: NSObject, ObservableObject {
             else {
                 self.timer!.invalidate()
                 self.device.play(.success)
-                self.session?.end()
+                self.session.invalidate()
                 self.timer = nil;
             }
         })

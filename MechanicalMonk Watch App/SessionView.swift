@@ -17,7 +17,7 @@ struct SessionView: View {
             let hh = String(format: "%02d", model.hours)
             let mm = String(format: "%02d", model.minutes)
             let ss = String(format: "%02d", model.seconds)
-            Text("\(hh):\(mm):\(ss)").font(.title)
+            Text("\(hh):\(mm):\(ss)").font(.title.monospaced())
             Spacer()
             Circle().frame(width: 3, height: 3).foregroundColor(model.feedback ? Color("AccentColor"):Color.white)
             Spacer()

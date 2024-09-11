@@ -15,9 +15,6 @@ struct MechanicalMonk_Watch_AppApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(model)
-                .onAppear {
-                    model.requestAuthorization()
-                }
         }
     }
 }
